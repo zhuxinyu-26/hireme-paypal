@@ -24,6 +24,25 @@ needed documentation:
 2. <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js" target="_blank">https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js</a>
 
 ## 💬 Code Snippets
+**.env**
+
+NODE_ENV = 'production'
+
+CONNECTION_STRING = 'mongodb+srv://zhuxinyu_26:Zxy970124@cluster0.6sozjjl.mongodb.net/hireme'
+
+PASSPORT_SECRET = 'some-kind-of-string'
+
+GOOGLE_CLIENT_ID = '475385508546-vrpsvje5j1vmd3u84nqjnkkjt2akbotb.apps.googleusercontent.com'
+
+GOOGLE_CLIENT_SECRET = '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'
+
+GOOGLE_CALLBACK_URL = 'http://localhost:3000/auth/google/callback'
+
+PAYPAL_CLIENT_ID = 'Aa9HDBmWOGQ5yL5PuF_ncdXdZ_U4qr9tNIMNyDhnmrLhkSW0-G1m1Ok_NG9O378K7ViGhJTBUBR658fv'
+
+PAYPAL_CLIENT_SECRET = 'EFmUDZ7oZu6Sw5d5x4DAXHQCCTnL3ytRFAHuH8G2ORPQeyXGnRsKCZ6WS-EOR2EaJlmiPZIqtWwNI2tH'
+
+
 **return & cancel urls**
 
 return_url: "http://localhost:3000/payment/success",
