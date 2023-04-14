@@ -3,6 +3,10 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+// STEP 1a - install the paypal-rest-sdk npm package: https://www.npmjs.com/package/paypal-rest-sdk
+// STEP 1b - import the PayPal REST SDK in app.js
+// STEP 1c - import the PayPal REST SDK in payment.js controller
+
 
 const indexRouter = require('./controllers/index');
 const usersRouter = require('./controllers/users');
@@ -10,6 +14,7 @@ const usersRouter = require('./controllers/users');
 const employers = require('./controllers/employers');
 const cities = require('./controllers/cities');
 const auth = require('./controllers/auth');
+const payment = require('./controllers/payment');
 
 const app = express();
 
@@ -78,12 +83,23 @@ passport.use(new googleStrategy({
   })
 }));
 
+// STEP 3a - paste from the documentation
+  /* STEP 3b - replace the default value with our own credentials in .env: 
+     https://developer.paypal.com/dashboard/applications/sandbox */
+  /* 
+    paypal.configure({
+      'mode': 'sandbox', //sandbox or live
+      'client_id':process.env.PAYPAL_CLIENT_ID,
+      'client_secret':process.env.PAYPAL_CLIENT_SECRET,
+    });
+ */
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 // map all requests at /employers to our own employers.js controller
 app.use('/employers', employers);
 app.use('/cities', cities);
 app.use('/auth', auth);
+app.use('/payment', payment);
 
 // add hbs extension function to select the correct dropdown option when editing
 const hbs = require('hbs');
