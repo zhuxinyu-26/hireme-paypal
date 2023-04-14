@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 
 // STEP 1c - import the PayPal REST SDK
-const paypal = require("paypal-rest-sdk");
 
 /* GET /payment/index page. */
 router.get("/", (req, res) => {
@@ -30,9 +29,9 @@ router.get("/successed", (req, res) => {
   
   // STEP 4c - pass it in the paypal.payment.create
   
-      // test with res.send('test');
+      // res.send('test');
       
-      // get the approval_url from then PAYMENT
+      // get the approval_url from the PAYMENT
 
 
 // STEP 5a - create route for /success
@@ -45,11 +44,11 @@ router.get("/successed", (req, res) => {
     // change transaction info
    
 
-  // STEP 6a - paypal.payment.execute
+  // STEP 5d - paypal.payment.execute
 
       // res.redirect("/payment/successed");
 
-// STEP 6b - GET /cancel 
+// STEP 6 - GET /cancel 
 
     // res.redirect("/payment/cancelled");
 
