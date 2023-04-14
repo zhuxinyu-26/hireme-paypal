@@ -22,5 +22,17 @@ needed documentation:
 1. <a href="https://www.npmjs.com/package/paypal-rest-sdk" target="_blank">https://www.npmjs.com/package/paypal-rest-sdk</a>
 2. <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js" target="_blank">https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js</a>
 
+## Code Snippits
+### form:post>input:submit
+<form action="/payment/pay" method="post">
+    <input type="submit" value="Upgrade">
+  </form>
+### for loop to get the approval_url
+for (let i = 0; i < payment.links.length; i++) {
+            if (payment.links[i].rel === 'approval_url') {
+              res.redirect(payment.links[i].href);
+            }
+          }
+
 ## ✉️ Reference
 [Intro To The Node.js PayPal REST SDK](https://www.youtube.com/watch?v=7k03jobKGXM&t=1374s) by Traversy Media
