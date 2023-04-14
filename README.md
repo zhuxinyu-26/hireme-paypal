@@ -14,13 +14,13 @@ https://www.npmjs.com/package/paypal-rest-sdk
 Install: npm i paypal-rest-sdk
 
 ## 🔗 Required Links
-1. [developer.paypal.com](https://developer.paypal.com/dashboard/)
-2. [sandbox.paypal.com](https://www.sandbox.paypal.com/)
+1. <a href="https://developer.paypal.com/dashboard/" target="_blank">developer.paypal.com</a>
+2. <a href="https://developer.paypal.com/dashboard/](https://www.sandbox.paypal.com" target="_blank">sandbox.paypal.com</a>
 
 ## 📖 Documentation
 needed documentation:
-https://www.npmjs.com/package/paypal-rest-sdk
-https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js
+1. <a href="https://www.npmjs.com/package/paypal-rest-sdk" target="_blank">https://www.npmjs.com/package/paypal-rest-sdk</a>
+2. <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js" target="_blank">https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js</a>
 
 ## ✉️ Reference
 [Intro To The Node.js PayPal REST SDK](https://www.youtube.com/watch?v=7k03jobKGXM&t=1374s) by Traversy Media
