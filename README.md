@@ -24,7 +24,13 @@ needed documentation:
 2. <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js" target="_blank">https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js</a>
 
 ## 💬 Code Snippets
+**return & cancel urls**
+
+return_url: "http://localhost:3000/payment/success",
+      cancel_url: "http://localhost:3000/payment/cancel",
+
 **for loop -> get the approval_url**
+
 for (let i = 0; i < payment.links.length; i++) {
             if (payment.links[i].rel === 'approval_url') {
               res.redirect(payment.links[i].href);
