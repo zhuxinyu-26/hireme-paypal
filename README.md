@@ -14,8 +14,8 @@ https://www.npmjs.com/package/paypal-rest-sdk
 Install: npm i paypal-rest-sdk
 
 ## 🔗 Required Links
-1. <a href="https://developer.paypal.com/dashboard/" target="_blank">developer.paypal.com</a>
-2. <a href="https://developer.paypal.com/dashboard/](https://www.sandbox.paypal.com" target="_blank">sandbox.paypal.com</a>
+1. [developer.paypal.com](https://developer.paypal.com)
+2. [sandbox.paypal.com](https://www.sandbox.paypal.com)
 
 ## 📖 Documentation
 needed documentation:
@@ -23,11 +23,6 @@ needed documentation:
 2. <a href="https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js" target="_blank">https://github.com/paypal/PayPal-node-SDK/blob/master/samples/payment/execute.js</a>
 
 ## 💬 Code Snippets
-**button**
-<form action="/payment/pay" method="post">
-    <input type="submit" value="Upgrade">
-  </form>
-  
 **for loop -> get the approval_url**
 for (let i = 0; i < payment.links.length; i++) {
             if (payment.links[i].rel === 'approval_url') {
