@@ -6,6 +6,7 @@ Please follow the steps to set up the starting project:
 4. $ cd hireme-paypal
 5. $ npm install
 6. fill up .env with your own credentials 
+7. nodemon hireme-paypal
 
 ## 🚀 Npm package installation
 paypal-rest-sdk npm package:
