@@ -25,10 +25,10 @@ needed documentation:
 
 ## 💬 Code Snippets
 
-**let's share the account :) **
-
 paypal-npm-inclass@personal.com
+
 paypal-npm-inclass@business.com
+
 password both Test1234
 
 **.env**
