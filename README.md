@@ -5,6 +5,7 @@ Please follow the steps to set up the starting project:
 3. $ git clone https://github.com/zhuxinyu-26/hireme-paypal
 4. $ cd hireme-paypal
 5. $ npm install
+6. fill up .env with your own credentials 
 
 ## 🚀 Npm package installation
 paypal-rest-sdk npm package:
