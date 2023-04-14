@@ -49,6 +49,10 @@ PAYPAL_CLIENT_ID = 'Aa9HDBmWOGQ5yL5PuF_ncdXdZ_U4qr9tNIMNyDhnmrLhkSW0-G1m1Ok_NG9O
 
 PAYPAL_CLIENT_SECRET = 'EFmUDZ7oZu6Sw5d5x4DAXHQCCTnL3ytRFAHuH8G2ORPQeyXGnRsKCZ6WS-EOR2EaJlmiPZIqtWwNI2tH'
 
+**⚠️IMPORTANT! get payerId and paymentId from the returned url**
+const payerId = req.query.PayerID;
+
+const paymentId=req.query.paymentId;
 
 **return & cancel urls**
 
