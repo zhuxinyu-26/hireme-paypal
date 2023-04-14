@@ -13,6 +13,10 @@ https://www.npmjs.com/package/paypal-rest-sdk
 
 Install: npm i paypal-rest-sdk
 
+## 🔗 Required Links
+1. [developer.paypal.com](https://developer.paypal.com/dashboard/)
+2. [sandbox.paypal.com](https://www.sandbox.paypal.com/)
+
 ## 📖 Documentation
 needed documentation:
 https://www.npmjs.com/package/paypal-rest-sdk
